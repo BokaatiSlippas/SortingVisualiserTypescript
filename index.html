@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sorting Algorithm Visualiser</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!--<script src='app.ts'></script>*/-->
+</head>
+<body>
+    <h1>Sorting Algorithm Visualiser</h1>
+    <div>
+        <button id="generate-array">Generate New Array</button>
+        <select id="algorithm-selector">
+            <option value="bubble">Bubble Sort</option>
+            <option value="Algorithm2">Algorithm2</option>
+            <option value="Algorithm3">Algorithm3</option>
+            <option value="Algorithm4">Algorithm4</option>
+            <option value="Algorithm5">Algorithm5</option>
+            <option value="Algorithm6">Algorithm6</option>
+            <option value="Algorithm7">Algorithm7</option>
+        </select>
+        <button id="sort">Sort</button>
+        <div class="slider-container">
+            <label for="speed">Speed:</label>
+            <input type="range" id="speed" min="1" max="100" value="50">
+        </div>
+        <div class="array-size-container">
+            <label for="array-size">Array Size:</label>
+            <input type="range" id="array-size" min="10" max="100" value="50">
+        </div>
+    </div>
+    <canvas id="visualisation-canvas" width="800" height="400"></canvas>
+        <!-- Bars are drawn here -->
+    <script src="./dist/app.js"></script>
+    <!-- We compile ts file into js file -->
+</body>
+</html>
